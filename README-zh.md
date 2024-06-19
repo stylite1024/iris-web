@@ -85,8 +85,8 @@ make build-image
 
 ## 提问
 
-Found an error? Is there something meaningless? Initiate an [issue]() to me, thank you!
+Found an error? Is there something meaningless? Initiate an [issue](https://github.com/stylite1024/iris-web/issues) to me, thank you!
 
 ## 开源协议
 
-[MIT]()
+[MIT](https://github.com/stylite1024/iris-web/blob/main/LICENSE)
