@@ -51,7 +51,7 @@ build-image: remove-container remove-image
 	@docker tag ${BINARY}:${VERSION} ${BINARY}:latest
 
 build-run-container: remove-container build-image
-	@docker run -d --name ${BINARY} ${BINARY}:${VERSION}
+	@docker run -d --name ${BINARY} -p 8080:8080 ${BINARY}:${VERSION}
 	@docker ps|grep ${BINARY}
 
 remove-image: remove-container
