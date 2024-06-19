@@ -19,6 +19,10 @@ func staticFileRouter(app *iris.Application) {
 		IndexName: "index.html", // 设置 index.html 作为默认页面
 	})
 	
+	app.Get("/ping", func(ctx iris.Context) {
+        ctx.WriteString("pong")
+    })
+	
 	// app.HandleDir("/frontend", web.FrontendFS)
 	// app.HandleDir("/backend", web.BackendFS)
 
