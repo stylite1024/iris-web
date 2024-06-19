@@ -1,8 +1,10 @@
 package router
 
 import (
+	"fmt"
 	"iris-web/internal/handler"
 	"iris-web/web"
+	"time"
 
 	"github.com/kataras/iris/v12"
 )
@@ -18,11 +20,11 @@ func staticFileRouter(app *iris.Application) {
 	app.HandleDir("/", web.StaticFS, iris.DirOptions{
 		IndexName: "index.html", // 设置 index.html 作为默认页面
 	})
-	
+
 	app.Get("/ping", func(ctx iris.Context) {
-        ctx.WriteString("pong")
-    })
-	
+		ctx.WriteString("pong " + fmt.Sprint(time.Now().Unix()))
+	})
+
 	// app.HandleDir("/frontend", web.FrontendFS)
 	// app.HandleDir("/backend", web.BackendFS)
 
