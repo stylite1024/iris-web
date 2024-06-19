@@ -18,6 +18,16 @@ func staticFileRouter(app *iris.Application) {
 	app.HandleDir("/", web.StaticFS, iris.DirOptions{
 		IndexName: "index.html", // 设置 index.html 作为默认页面
 	})
+	
+	// app.HandleDir("/frontend", web.FrontendFS)
+	// app.HandleDir("/backend", web.BackendFS)
+
+	// app.Get("/", func(c iris.Context) {
+	// 	c.Redirect("/frontend/index.html", iris.StatusMovedPermanently)
+	// })
+	// app.Get("/admin", func(c iris.Context) {
+	// 	c.Redirect("/backend/index.html", iris.StatusMovedPermanently)
+	// })
 }
 
 func apiRouter(app *iris.Application) {
