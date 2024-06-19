@@ -10,6 +10,7 @@ iris-web是一个基于go iris和vue3框架的web模板。它采用的是前后�
 详看：[project-layout](https://github.com/golang-standards/project-layout)
 ```
 .
+├── air.toml
 ├── cmd
 │   ├── root.go
 │   └── version.go
@@ -17,6 +18,7 @@ iris-web是一个基于go iris和vue3框架的web模板。它采用的是前后�
 │   └── info.go
 ├── docker-compose.yml
 ├── Dockerfile
+├── Dockerfile.alpine
 ├── docs
 ├── go.mod
 ├── go.sum
@@ -37,11 +39,24 @@ iris-web是一个基于go iris和vue3框架的web模板。它采用的是前后�
 ├── README.md
 ├── README-zh.md
 ├── scripts
-│   └── docker-entrypoint.sh
+│   ├── docker-entrypoint.sh
+│   └── nginx.conf
+├── test
+│   └── iris_test.go
 └── web
     ├── static
-    │   ├── favicon.ico
-    │   └── index.html
+    │   ├── api
+    │   │   └── test.js
+    │   ├── assets
+    │   │   ├── img
+    │   │   │   └── favicon.ico
+    │   │   └── js
+    │   │       └── request.js
+    │   ├── index2.html
+    │   ├── index.html
+    │   └── pages
+    │       └── demo
+    │           └── demo.html
     └── static.go
 ```
 

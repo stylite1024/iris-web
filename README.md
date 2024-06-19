@@ -7,7 +7,7 @@ iris-web is a web template based on [vue3](https://vuejs.org) and [iris](https:/
 ## Project Layout
 See: [project-layout](https://github.com/golang-standards/project-layout)
 ```
-.
+├── air.toml
 ├── cmd
 │   ├── root.go
 │   └── version.go
@@ -15,6 +15,7 @@ See: [project-layout](https://github.com/golang-standards/project-layout)
 │   └── info.go
 ├── docker-compose.yml
 ├── Dockerfile
+├── Dockerfile.alpine
 ├── docs
 ├── go.mod
 ├── go.sum
@@ -35,11 +36,24 @@ See: [project-layout](https://github.com/golang-standards/project-layout)
 ├── README.md
 ├── README-zh.md
 ├── scripts
-│   └── docker-entrypoint.sh
+│   ├── docker-entrypoint.sh
+│   └── nginx.conf
+├── test
+│   └── iris_test.go
 └── web
     ├── static
-    │   ├── favicon.ico
-    │   └── index.html
+    │   ├── api
+    │   │   └── test.js
+    │   ├── assets
+    │   │   ├── img
+    │   │   │   └── favicon.ico
+    │   │   └── js
+    │   │       └── request.js
+    │   ├── index2.html
+    │   ├── index.html
+    │   └── pages
+    │       └── demo
+    │           └── demo.html
     └── static.go
 ```
 
