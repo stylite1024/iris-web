@@ -5,6 +5,7 @@
 iris-web is a web template based on [vue3](https://vuejs.org) and [iris](https://github.com/kataras/iris) in  [Go](https://go.dev/). It does not require packaging of front-end static files, HTML directly uses Vue3 axios、element-plus ui， Embed into go binary file.
 
 ## Project Layout
+See: [project-layout](https://github.com/golang-standards/project-layout)
 ```
 .
 ├── cmd

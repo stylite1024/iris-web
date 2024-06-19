@@ -7,7 +7,7 @@
 iris-web是一个基于go iris和vue3框架的web模板。它采用的是前后端不分离模式，可用于快速开发web应用。
 
 ## 目录结构
-
+详看：[project-layout](https://github.com/golang-standards/project-layout)
 ```
 .
 ├── cmd
